@@ -3,7 +3,7 @@
 `QOLLAB_0.2.4.zip` es una entrega plana: todos los archivos están en la raíz, sin carpetas. El proyecto de Qollab tiene que ser de tipo **JS / Qiskit**.
 
 1. Detené la ejecución en Qollab.
-2. Descargá `QOLLAB_0.2.4.zip` desde GitHub. Abrí el archivo y usá **Download raw file**, con tu sesión iniciada; el «Code → Download ZIP» general trae también las carpetas de desarrollo.
+2. Descargá `QOLLAB_0.2.4.zip` desde https://github.com/unigasparosterrieth/qriollo-truco-cuantico: abrí el archivo y usá **Download raw file**. El «Code → Download ZIP» general trae también las carpetas de desarrollo.
 3. Descomprimilo en tu computadora. Qollab necesita los archivos sueltos, no el ZIP.
 4. En **Code → Files**, cargá todos los archivos y reemplazá los que tengan el mismo nombre. Si alguno no se reemplaza al cargarlo, pegá su contenido desde el editor. Conservá un solo archivo de cada nombre.
 5. Ejecutá el proyecto.

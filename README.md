@@ -2,6 +2,8 @@
 
 **A truly Argentine way to learn quantum computing.**
 
+**Source code:** https://github.com/unigasparosterrieth/qriollo-truco-cuantico (MIT)
+
 *Versión en español más abajo.*
 
 This effort is supported by Qollab & IonQ.
@@ -65,7 +67,14 @@ The footer shows the running version (**v0.2.4**).
 
 ### Locally
 
-You need Python 3.12 or later. From the repository root:
+You need Python 3.12 or later. Clone the repository:
+
+```sh
+git clone https://github.com/unigasparosterrieth/qriollo-truco-cuantico.git
+cd qriollo-truco-cuantico
+```
+
+Then, from the repository root:
 
 ```sh
 python -m venv .venv
@@ -131,6 +140,8 @@ Full notices are in `THIRD_PARTY_NOTICES.md`.
 
 **Una forma bien argenta de aprender computación cuántica.**
 
+**Código fuente:** https://github.com/unigasparosterrieth/qriollo-truco-cuantico (MIT)
+
 ## ¿Qué es?
 
 Qriollo es el **Truco** argentino con una carta más: la **carta cuántica**. Al empezar cada mano, cada jugador convierte una de sus tres cartas en un **qubit**, la transforma con compuertas cuánticas y la mide al jugarla. La medición decide qué carta es en realidad, y eso cambia quién gana la baza y la mano.
@@ -190,7 +201,14 @@ El pie de página muestra la versión en ejecución (**v0.2.4**).
 
 ### En tu computadora
 
-Necesitás Python 3.12 o posterior. Desde la raíz del repositorio:
+Necesitás Python 3.12 o posterior. Cloná el repositorio:
+
+```sh
+git clone https://github.com/unigasparosterrieth/qriollo-truco-cuantico.git
+cd qriollo-truco-cuantico
+```
+
+Después, desde la raíz del repositorio:
 
 ```sh
 python -m venv .venv
