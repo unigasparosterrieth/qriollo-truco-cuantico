@@ -143,7 +143,7 @@ La computación cuántica suele enseñarse con notación abstracta, antes de que
 - **Medición y colapso:** una vez medida, la carta queda fija.
 
 Se aprenden porque deciden si ganás la mano.
-z
+
 Está pensado para:
 - **estudiantes secundarios y universitarios** que dan sus primeros pasos en computación cuántica;
 - **docentes** que buscan una actividad práctica para el aula;
