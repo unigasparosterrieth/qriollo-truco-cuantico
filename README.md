@@ -59,33 +59,12 @@ The two qubits are independent: there is no entanglement and no claim of quantum
 
 ### On Qollab
 
-1. Open the Qriollo project on Qollab and press **Run**. The project runs as **JS / Qiskit** on Qollab's free built-in simulator, with no key or account setup.
+1. Open the Qriollo project on Qollab and press **Run**. The project runs as **JS / Qiskit** on Qollab's free built-in simulator.
 2. On the home screen, pick a language with 🌐.
 3. Start with **Tutorial → Truco with Bot Q**, or go straight to **Quick game**.
 
 The footer shows the running version (**v0.2.4**).
 
-### Locally
-
-You need Python 3.12 or later. Clone the repository:
-
-```sh
-git clone https://github.com/unigasparosterrieth/qriollo-truco-cuantico.git
-cd qriollo-truco-cuantico
-```
-
-Then, from the repository root:
-
-```sh
-python -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
-.venv/bin/python serve.py
-```
-
-Then open `http://127.0.0.1:8000`.
-- **Windows:** use `.venv\Scripts\python.exe`.
-- **Another port:** use `serve.py --port 8001`.
-- No keys or database are needed.
 
 ## What results to expect
 
@@ -102,7 +81,7 @@ Then open `http://127.0.0.1:8000`.
 
 ## Rules variant
 
-Two players, 15 points, no Flor, Spanish 40-card deck.
+Two players, 15 points, Spanish 40-card deck.
 - **Tricks:** a hand is won with two of three tricks (bazas).
 - **Truco:** the hand is worth 1 point, or 2, 3 or 4 with Truco, Retruco and Vale Cuatro.
 - **Envido:** a separate bet on card points:
@@ -158,17 +137,17 @@ Se juega en el navegador, en español e inglés, entre dos personas que comparte
 
 La computación cuántica suele enseñarse con notación abstracta, antes de que haya una razón para que importe. Qriollo convierte las ideas centrales en **decisiones con consecuencias dentro de un juego que la gente ya conoce**:
 
-- **Superposición:** tu carta es 50 % el 7 de copa y 50 % el 7 de espada.
+- **Superposición:** Por ejemplo; tu carta es 50 % el 7 de copa y 50 % el 7 de espada.
 - **Compuertas como rotaciones:** H, X, Z, RX, RY y RZ mueven una flecha en la esfera de Bloch.
 - **Fase:** Z no cambia nada hoy, pero cambia lo que hace una H después.
 - **Medición y colapso:** una vez medida, la carta queda fija.
 
 Se aprenden porque deciden si ganás la mano.
-
+z
 Está pensado para:
 - **estudiantes secundarios y universitarios** que dan sus primeros pasos en computación cuántica;
 - **docentes** que buscan una actividad práctica para el aula;
-- **cualquier persona de Latinoamérica y España** que ya juega al Truco o quiere aprenderlo.
+- **cualquier persona del Mundo** que ya juega al Truco o quiere aprenderlo.
 
 No hace falta saber física ni programación: el tutorial arranca por las reglas de las cartas y llega hasta las compuertas, la fase y la medición.
 
@@ -179,7 +158,7 @@ No hace falta saber física ni programación: el tutorial arranca por las reglas
    - **|1⟩**: su carta **ligada**, que conserva el número y cambia al palo pareja: **basto ↔ oro** y **copa ↔ espada**.
 
    Por ejemplo, un 7 de copa débil (fila 11 de 14 en la escala) puede volverse el 7 de espada (fila 3).
-2. **Compuertas.** Cada jugador recibe 4 fichas por mano de un mazo de 41: **H, Z, RX, RY y RZ**, 8 fichas de cada una, y una sola **X**, que es rara. Las rotaciones tienen ángulos fijos de 30°, −30°, 60° y 90°. Se colocan hasta tres fichas, en el orden que quieras, y se toca **Confirmar**. En el nivel Difícil cada jugador puede sacar compuertas solo dos veces por mano.
+2. **Compuertas.** Cada jugador recibe 4 compuertas cuanticas por mano de un mazo de 41: **H, Z, RX, RY y RZ**, 8 fichas de cada una, y una sola **X**, que es rara. Las rotaciones tienen ángulos fijos de 30°, −30°, 60° y 90°. Se colocan hasta tres fichas, en el orden que quieras, y se toca **Confirmar**. En el nivel Difícil cada jugador puede sacar compuertas solo dos veces por mano.
 3. **Qiskit.** Para cada circuito, Qiskit arma un `QuantumCircuit` de un qubit y calcula el `Statevector` después de cada compuerta. El juego muestra:
    - las probabilidades exactas de las dos identidades;
    - el recorrido del estado en una esfera de Bloch interactiva. La esfera rotula sus seis polos (|0⟩, |1⟩, |+⟩, |−⟩, |+i⟩, |−i⟩) y cada eje tiene su propio color.
@@ -193,33 +172,12 @@ Los dos qubits son independientes: no hay entrelazamiento ni se afirma una venta
 
 ### En Qollab
 
-1. Abrí el proyecto Qriollo en Qollab y tocá **Run**. El proyecto corre como **JS / Qiskit** en el simulador gratuito integrado de Qollab, sin configurar claves ni cuentas.
+1. Abrí el proyecto Qriollo en Qollab y tocá **Run**. El proyecto corre como **JS / Qiskit** en el simulador gratuito integrado de Qollab.
 2. En el inicio, elegí el idioma con 🌐.
 3. Empezá por **Tutorial → Truco con Bot Q**, o andá directo a **Partida rápida**.
 
 El pie de página muestra la versión en ejecución (**v0.2.4**).
 
-### En tu computadora
-
-Necesitás Python 3.12 o posterior. Cloná el repositorio:
-
-```sh
-git clone https://github.com/unigasparosterrieth/qriollo-truco-cuantico.git
-cd qriollo-truco-cuantico
-```
-
-Después, desde la raíz del repositorio:
-
-```sh
-python -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
-.venv/bin/python serve.py
-```
-
-Después abrí `http://127.0.0.1:8000`.
-- **Windows:** usá `.venv\Scripts\python.exe`.
-- **Otro puerto:** usá `serve.py --port 8001`.
-- No hacen falta claves ni base de datos.
 
 ## Qué resultados esperar
 
@@ -236,7 +194,7 @@ Después abrí `http://127.0.0.1:8000`.
 
 ## Variante de reglas
 
-Dos jugadores, a 15 puntos, sin Flor, con la baraja española de 40 cartas.
+Dos jugadores, a 15 puntos, con la baraja española de 40 cartas.
 - **Bazas:** la mano se gana con dos de tres bazas.
 - **Truco:** la mano vale 1 punto, o 2, 3 o 4 con Truco, Retruco y Vale Cuatro.
 - **Envido:** apuesta aparte sobre los tantos:
